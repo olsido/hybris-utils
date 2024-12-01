@@ -4,11 +4,11 @@ A collection of utility scripts to assist with SAP Hybris project management and
 
 ## Current Tools
 
-1. **Hybris Circular Dependency Checker**
+1. **[Hybris Circular Dependency Checker](HybrisCircularDependencyChecker)**
    - Detects circular dependencies between extensions in your Hybris project.
    - Analyzes `extensioninfo.xml` files and reports any circular references.
 
-2. **Hybris Obsolete Items Cleanup**
+2. **[Hybris Obsolete Items Cleanup](HybrisObsoleteItemsCleanup)**
    - Automates the cleanup of obsolete items such as old log files, job logs, and ImpEx media.
    - Supports flexible date cutoff policies and batch deletion for optimized performance.
 

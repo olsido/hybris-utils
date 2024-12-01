@@ -33,6 +33,18 @@ final List<Map<String, Object>> TARGET_TYPES = [
         query: "SELECT {PK} FROM {ImpExMedia} WHERE {creationtime} <= '__CUTOFF_DATE__'",
         cutoff: '6M 12H', // 6 months, 12 hours
         mode: 'QUERY' // Mode for this type - can be 'QUERY' or 'DELETE'
+    ],
+    [
+        type: 'ImpExMedia',
+        query: "SELECT {PK} FROM {PriceRow} WHERE {endTime} <= '__CUTOFF_DATE__'",
+        cutoff: '1Y 1M 2W', // 6 months, 12 hours
+        mode: 'QUERY' // Mode for this type - can be 'QUERY' or 'DELETE'
+    ],
+    [
+        type: 'PromotionSourceRule',
+        query: "SELECT {PK} FROM {PromotionSourceRule} WHERE {endDate} <= '__CUTOFF_DATE__'",
+        cutoff: '1Y 1M 2W', // 6 months, 12 hours
+        mode: 'QUERY' // Mode for this type - can be 'QUERY' or 'DELETE'
     ]
 ]
 

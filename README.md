@@ -4,12 +4,30 @@ A collection of utility scripts to assist with SAP Hybris project management and
 
 ## Current Tools
 
-### 1. Hybris Circular Dependency Checker
+1. **Hybris Circular Dependency Checker**
+   - Detects circular dependencies between extensions in your Hybris project.
+   - Analyzes `extensioninfo.xml` files and reports any circular references.
 
-This script helps you detect circular dependencies between extensions in your Hybris project. It recursively scans `extensioninfo.xml` files to analyze dependencies and report any circular references.
+2. **Hybris Obsolete Items Cleanup**
+   - Automates the cleanup of obsolete items such as old log files, job logs, and ImpEx media.
+   - Supports flexible date cutoff policies and batch deletion for optimized performance.
 
-#### Usage
-1. Clone this repository or download the script.
-2. Run the script with Groovy, passing the path to your `bin/custom` directory as an argument:
+Each script is in its own directory with specific usage instructions. Navigate to the desired tool's directory for more details.
+
+## How to Use These Scripts
+
+1. Clone the repository:
    ```bash
-   groovy HybrisCircularDependencyChecker.groovy <path-to-hybris-bin-custom>
+   git clone https://github.com/<your-username>/Hybris-Utils.git
+   ```
+2. Navigate to the desired script’s directory.
+
+3. Follow the instructions provided in the README.md of that directory.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

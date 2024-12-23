@@ -23,6 +23,7 @@ This script automates the cleanup of obsolete items in SAP Hybris, such as old l
        ]
      ]
 3. Run the script with Groovy in HAC (Hybris Administration Console).
+4. Monitor logs for logger "groovy.log.cleanup".
 
 ## Requirements
 

@@ -12,6 +12,10 @@ A collection of utility scripts to assist with SAP Hybris project management and
    - Automates the cleanup of obsolete items such as old log files, job logs, and ImpEx media.
    - Supports flexible date cutoff policies and batch deletion for optimized performance.
 
+3. **[Hybris Update Media Folders](HybrisUpdateMediaFolders)**
+   - Updates the location field of media items, so it is prefixed with the name of the media folder where they belong.
+   - This is useful, for example, when copying the database and medias over from CCv2 to the local environment, since in CCv2 the cloud media storage strategy doesn't prefix the location with the folder name, and the local media strategy does.
+
 Each script is in its own directory with specific usage instructions. Navigate to the desired tool's directory for more details.
 
 ## How to Use These Scripts
